@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Datopedia</title>
+<link>https://datopedia.org/blog.html</link>
+<atom:link href="https://datopedia.org/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Liberación de datos públicos: convertimos informes PDFs y reportes no estructurados o procesables en datasets abiertos y consumibles.</description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Thu, 03 Sep 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Datopedia se convierte en un sitio de liberación de datos</title>
+  <dc:creator>Datopedia </dc:creator>
+  <link>https://datopedia.org/posts/liberando-datos-conflictos-sociales/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Durante los últimos meses, la mayor parte del trabajo detrás de cada visualización o análisis publicado en Datopedia ha sido, en realidad, invisible para quien lo lee: horas dedicadas a extraer una tabla de un PDF de doscientas páginas, a reconstruir un panel de datos a partir de decenas de Excel individuales, o a convertir la salida de un visor institucional en algo que se pueda cargar en cualquier herramienta de análisis.</p>
+<p>A partir de hoy, ese trabajo deja de ser invisible.</p>
+<section id="qué-cambia" class="level2">
+<h2 class="anchored" data-anchor-id="qué-cambia">Qué cambia</h2>
+<p>Datopedia incorpora una nueva sección, <a href="../../datos-abiertos.html">Datos abiertos</a>, con un catálogo de datasets liberados a partir de fuentes públicas no estructuradas. Cada dataset se publica junto con:</p>
+<ul>
+<li><strong>El archivo en un formato abierto</strong> (CSV, GeoJSON/KML) listo para descargar.</li>
+<li><strong>Un diccionario de datos</strong> que explica cada columna.</li>
+<li><strong>El código de extracción</strong>, disponible en el <a href="https://github.com/datopedia-pe/datopedia">repositorio de GitHub</a>.</li>
+</ul>
+</section>
+<section id="el-primer-dataset-conflictos-sociales" class="level2">
+<h2 class="anchored" data-anchor-id="el-primer-dataset-conflictos-sociales">El primer dataset: conflictos sociales</h2>
+<p>El catálogo abre con el <a href="../../datos-abiertos.html">reporte mensual de Conflictos Sociales de la Defensoría del Pueblo</a>. La Defensoría publica un mapa por mes con los casos activos y su fase, pero el mapa no trae los datos detrás: para analizar cómo evoluciona un caso en el tiempo, o comparar conflictividad entre regiones, hay que reconstruir esa información mes a mes desde el archivo KML que exporta el visor.</p>
+<p>Eso es exactamente lo que hace el pipeline que libera este dataset: consolida los KML mensuales en una sola tabla, deduplica los casos que el mapa repite entre sus distintas capas (todos / activos / socioambientales), y cruza el departamento, la provincia y el distrito de cada caso contra la tabla oficial de UBIGEO — para que el dataset se pueda combinar directamente con cualquier otra fuente pública organizada por UBIGEO.</p>
+</section>
+<section id="por-qué" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué">Por qué</h2>
+<p>La información pública peruana suele cumplir la definición legal de “dato abierto” sin cumplir la definición práctica: está disponible, pero no es usable sin antes reconstruirla. Esa reconstrucción es el trabajo que ya veníamos haciendo para nuestros propios análisis. Publicarla como insumo significa que cualquier persona —periodista, investigador, funcionario público— puede partir de ahí, en lugar de repetir el mismo trabajo de extracción desde cero.</p>
+</section>
+<section id="qué-sigue" class="level2">
+<h2 class="anchored" data-anchor-id="qué-sigue">Qué sigue</h2>
+<p>El pipeline que procesa conflictos sociales quedó documentado como plantilla reutilizable en el repositorio, para que cada dataset nuevo siga la misma convención: un script que extrae y limpia, y otro que publica el CSV, el diccionario de datos y lo suma al catálogo. Cada dataset nuevo tendrá su propia nota en este blog explicando de dónde salió y qué decisiones se tomaron al construirlo.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a> ]]></description>
+  <category>Anuncios</category>
+  <category>Datos abiertos</category>
+  <category>Conflictividad social</category>
+  <guid>https://datopedia.org/posts/liberando-datos-conflictos-sociales/</guid>
+  <pubDate>Thu, 03 Sep 2026 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

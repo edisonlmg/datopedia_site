@@ -49,13 +49,6 @@
     "text": "Criterios de liberación\n\nLa fuente debe ser pública. Solo se trabaja con información que ya es de acceso público, aunque no esté estructurada.\nSe documenta el origen. Cada dataset indica de qué informe, portal o visor proviene, y cuándo se extrajo.\nSe publica el proceso, no solo el resultado. El código de extracción queda en el repositorio junto con el dataset.\nSe prioriza lo reutilizable. Formatos abiertos (CSV, GeoJSON/KML) antes que formatos propietarios, y nombres de columna estandarizados."
   },
   {
-    "objectID": "presentacion.html#quién-está-detrás",
-    "href": "presentacion.html#quién-está-detrás",
-    "title": "Presentación",
-    "section": "Quién está detrás",
-    "text": "Quién está detrás\nDatopedia es un proyecto de Edison Mondragón, ingeniero economista especializado en el sector público peruano — inversión pública, control gubernamental y presupuesto — que usa R y Quarto para convertir esa experiencia en datos y análisis abiertos."
-  },
-  {
     "objectID": "datos-abiertos.html",
     "href": "datos-abiertos.html",
     "title": "Datos abiertos",
