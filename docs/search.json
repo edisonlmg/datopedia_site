@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "El dato público liberado y abierto.",
-    "section": "",
-    "text": "● datos públicos, liberados\n\n\n\nDatopedia extrae información pública atrapada en informes PDF, hojas de cálculo, archivos geográficos y otros formatos no estructurados o no procesables directamente, y la transforma en datasets abiertos, documentados y listos para usar.\n\n\nVer datos abiertos Leer el blog\n\n\n\n1 datasets liberados\n\n\n1 formatos de origen\n\n\n100% código y datos abiertos"
-  },
-  {
-    "objectID": "index.html#qué-encuentras-aquí",
-    "href": "index.html#qué-encuentras-aquí",
-    "title": "El dato público liberado y abierto.",
-    "section": "Qué encuentras aquí",
-    "text": "Qué encuentras aquí\n\n  \n    01 · presentación\n    Qué es Datopedia\n    Quiénes hacemos este proyecto, por qué liberamos datos públicos y qué\n    criterios seguimos para hacerlo.\n  \n  \n    02 · blog\n    Análisis y hallazgos\n    Notas y visualizaciones sobre inversión pública, presupuesto y\n    contrataciones en el Perú, construidas sobre los datasets liberados.\n  \n  \n    03 · datos abiertos\n    El catálogo de datasets\n    Tablas de informes, Excel de reporte físico y archivos KML convertidos\n    en datasets listos para descargar, con su diccionario de datos.\n  \n  \n    04 · repositorio\n    Código en GitHub\n    Los scripts de extracción, los datasets y sus diccionarios viven en el\n    repositorio público de Datopedia."
-  },
-  {
-    "objectID": "index.html#cómo-trabajamos",
-    "href": "index.html#cómo-trabajamos",
-    "title": "El dato público liberado y abierto.",
-    "section": "Cómo trabajamos",
-    "text": "Cómo trabajamos\nCada dataset del catálogo pasa por el mismo proceso: identificamos una fuente pública no estructurada — un informe en PDF, un Excel pensado para imprimirse, un archivo KML de un visor institucional — y la convertimos en una tabla limpia, con nombres de columna estandarizados y un diccionario de datos que explica cada campo. El dataset, su diccionario y el script que lo generó quedan publicados en el repositorio de GitHub, para que cualquier persona pueda auditar el proceso o reutilizarlo."
-  },
-  {
     "objectID": "presentacion.html",
     "href": "presentacion.html",
     "title": "Presentación",
@@ -49,6 +28,34 @@
     "text": "Criterios de liberación\n\nLa fuente debe ser pública. Solo se trabaja con información que ya es de acceso público, aunque no esté estructurada.\nSe documenta el origen. Cada dataset indica de qué informe, portal o visor proviene, y cuándo se extrajo.\nSe publica el proceso, no solo el resultado. El código de extracción queda en el repositorio junto con el dataset.\nSe prioriza lo reutilizable. Formatos abiertos (CSV, GeoJSON/KML) antes que formatos propietarios, y nombres de columna estandarizados."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "El dato público liberado y abierto.",
+    "section": "",
+    "text": "● datos públicos, liberados\n\n\n\nDatopedia extrae información pública atrapada en informes PDF, hojas de cálculo, archivos geográficos y otros formatos no estructurados o no procesables directamente, y la transforma en datasets abiertos, documentados y listos para usar.\n\n\nVer datos abiertos Leer el blog\n\n\n\n1 datasets liberados\n\n\n1 formatos de origen\n\n\n100% código y datos abiertos"
+  },
+  {
+    "objectID": "index.html#qué-encuentras-aquí",
+    "href": "index.html#qué-encuentras-aquí",
+    "title": "El dato público liberado y abierto.",
+    "section": "Qué encuentras aquí",
+    "text": "Qué encuentras aquí\n\n  \n    01 · presentación\n    Qué es Datopedia\n    Quiénes hacemos este proyecto, por qué liberamos datos públicos y qué\n    criterios seguimos para hacerlo.\n  \n  \n    02 · blog\n    Análisis y hallazgos\n    Notas y visualizaciones sobre inversión pública, presupuesto y\n    contrataciones en el Perú, construidas sobre los datasets liberados.\n  \n  \n    03 · datos abiertos\n    El catálogo de datasets\n    Tablas de informes, Excel de reporte físico y archivos KML convertidos\n    en datasets listos para descargar, con su diccionario de datos.\n  \n  \n    04 · repositorio\n    Código en GitHub\n    Los scripts de extracción, los datasets y sus diccionarios viven en el\n    repositorio público de Datopedia."
+  },
+  {
+    "objectID": "index.html#cómo-trabajamos",
+    "href": "index.html#cómo-trabajamos",
+    "title": "El dato público liberado y abierto.",
+    "section": "Cómo trabajamos",
+    "text": "Cómo trabajamos\nCada dataset del catálogo pasa por el mismo proceso: identificamos una fuente pública no estructurada — un informe en PDF, un Excel pensado para imprimirse, un archivo KML de un visor institucional — y la convertimos en una tabla limpia, con nombres de columna estandarizados y un diccionario de datos que explica cada campo. El dataset, su diccionario y el script que lo generó quedan publicados en el repositorio de GitHub, para que cualquier persona pueda auditar el proceso o reutilizarlo."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Datopedia se convierte en un sitio de liberación de datos\n\n\nEmpezamos con el reporte mensual de conflictos sociales de la Defensoría del Pueblo\n\n\n\nAnuncios\n\nDatos abiertos\n\nConflictividad social\n\n\n\n\n\n\n3 de septiembre, 2026\n\n2 minutos\n\n\n\n\nNo hay resultados\n Volver arriba"
+  },
+  {
     "objectID": "datos-abiertos.html",
     "href": "datos-abiertos.html",
     "title": "Datos abiertos",
@@ -61,13 +68,6 @@
     "title": "Datos abiertos",
     "section": "Cómo usar estos datasets",
     "text": "Cómo usar estos datasets\nCada dataset se distribuye junto con un diccionario de datos en Markdown que describe cada columna, su tipo y su unidad. Recomendamos citar la fuente original y a Datopedia al reutilizar cualquiera de estos datasets. El historial de cambios de cada uno queda registrado en el historial de commits de su carpeta en el repositorio de GitHub."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Datopedia se convierte en un sitio de liberación de datos\n\n\nEmpezamos con el reporte mensual de conflictos sociales de la Defensoría del Pueblo\n\n\n\nAnuncios\n\nDatos abiertos\n\nConflictividad social\n\n\n\n\n\n\n3 de septiembre, 2026\n\n2 minutos\n\n\n\n\nNo hay resultados\n Volver arriba"
   },
   {
     "objectID": "posts/liberando-datos-conflictos-sociales/index.html",

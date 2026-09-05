@@ -8,6 +8,7 @@ project:
 website:
   title: "Datopedia"
   site-url: "https://datopedia.org"
+  google-analytics: G-73XYP0Y0DX
   description: "Liberación de datos públicos: convertimos informes PDFs y reportes no estructurados o procesables en datasets abiertos y consumibles."
   favicon: images/favicon.svg
   page-navigation: true

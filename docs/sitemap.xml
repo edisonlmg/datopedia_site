@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://datopedia.org/index.html</loc>
-    <lastmod>2026-09-05T01:11:15.089Z</lastmod>
-  </url>
-  <url>
     <loc>https://datopedia.org/presentacion.html</loc>
     <lastmod>2026-09-05T01:13:26.156Z</lastmod>
   </url>
   <url>
-    <loc>https://datopedia.org/datos-abiertos.html</loc>
-    <lastmod>2026-09-04T23:58:24.114Z</lastmod>
+    <loc>https://datopedia.org/index.html</loc>
+    <lastmod>2026-09-05T01:11:15.089Z</lastmod>
   </url>
   <url>
     <loc>https://datopedia.org/blog.html</loc>
     <lastmod>2026-09-04T03:04:44.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datopedia.org/datos-abiertos.html</loc>
+    <lastmod>2026-09-04T23:58:24.114Z</lastmod>
   </url>
   <url>
     <loc>https://datopedia.org/posts/liberando-datos-conflictos-sociales/index.html</loc>
