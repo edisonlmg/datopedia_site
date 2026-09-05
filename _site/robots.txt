@@ -1,1 +1,1 @@
-Sitemap: https://edisonlmg.github.io/datopediablog/sitemap.xml
+Sitemap: https://datopedia.org/sitemap.xml

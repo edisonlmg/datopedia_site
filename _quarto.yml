@@ -1,33 +1,72 @@
 project:
   type: website
-  resources:
-    - CNAME
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/"
 
 website:
-  description: "Advanced analysis of public data"
-  site-url: https://edisonlmg.github.io/datopediablog/
-  google-analytics: "G-Y4LXHS8LXT"
-  title: "datopediablog"
+  title: "Datopedia"
+  site-url: "https://datopedia.org"
+  description: "Liberación de datos públicos: convertimos informes PDFs y reportes no estructurados o procesables en datasets abiertos y consumibles."
+  favicon: images/favicon.svg
+  page-navigation: true
+  back-to-top-navigation: true
+
   navbar:
+    background: "#152238"
+    foreground: "#F4F2EA"
+    logo: images/sello.svg
+    logo-alt: "Datopedia"
+    title: "Datopedia"
+    left:
+      - href: index.qmd
+        text: "Inicio"
+      - href: presentacion.qmd
+        text: "Presentación"
+      - href: blog.qmd
+        text: "Blog"
+      - href: datos-abiertos.qmd
+        text: "Datos abiertos"
     right:
-      - about.qmd
-      - text: "Dashboards"
-        href: dashboards.qmd
-      - text: "Presentaciones"
-        href: presentations.qmd
-      - text: "Datasets"
-        href: datasets.qmd
+      - icon: github
+        href: https://github.com/edisonlmg/datopedia_site.git
+        text: "Repositorio GitHub"
+        target: _blank
+
+  page-footer:
+    background: "#152238"
+    foreground: "#C9CDD6"
+    left: "© 2026 Datopedia — datos públicos liberados."
+    center: "Publicado bajo licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es)."
+    right:
+      - icon: github
+        href: https://github.com/edisonlmg/datopedia_site.git
+      - icon: rss
+        href: blog.xml
+
+  open-graph: true
+  twitter-card: true
 
 format:
   html:
     theme:
-      - yeti
-      - brand
-    css: styles.css
+      - cosmo
+      - styles/datopedia.scss
+    css: styles/styles.css
+    toc: false
+    grid:
+      body-width: 900px
     code-fold: true
-    code-copy: true
-    code-tools: true
-    highlight-style: github
+    link-external-newwindow: true
+    smooth-scroll: true
 
-editor: visual
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
 
+lang: es
+
+editor: source

@@ -1,19 +1,7 @@
-# Opciones aplicadas a todos los posts de esta carpeta
-# freeze: true
-
-# Estética del título
-title-block-banner: true
-
-# Configuración de formato
-format:
-  html:
-    toc: true
-    toc-location: left
-    toc-title: "Contenido"
-    toc-depth: 3
-    code-fold: true
-    code-copy: true
-    code-tools: true
-    number-sections: true
-    smooth-scroll: true
-    
+# Metadatos por defecto para todos los posts del blog.
+page-layout: article
+title-block-banner: false
+toc: true
+toc-title: "En este artículo"
+author: "Datopedia"
+lang: es

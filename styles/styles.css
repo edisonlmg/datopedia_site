@@ -1,0 +1,327 @@
+/* =========================================================
+   Datopedia — estilos de componentes
+   Paleta: ver styles/datopedia.scss (fuente única de verdad)
+   ========================================================= */
+
+:root {
+  --ink: #152238;
+  --ink-700: #223250;
+  --paper: #EFF1EC;
+  --paper-2: #F7F8F5;
+  --stamp: #B9752A;
+  --stamp-d: #935C1F;
+  --free: #2B6F5C;
+  --free-d: #1F5647;
+  --line: #D6D2C4;
+  --text: #23282B;
+  --text-mut: #5B6268;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* ---------- Hero de portada ---------------------------------------- */
+
+.do-hero {
+  position: relative;
+  margin: -1.5rem calc(50% - 50vw) 3rem calc(50% - 50vw);
+  padding: 4.5rem 1.5rem 5rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper-2);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.do-hero::before {
+  /* líneas horizontales tenues: el "documento" del que se extrae el dato */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.16;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 30px,
+    rgba(244, 242, 234, 0.6) 31px
+  );
+  mask-image: linear-gradient(to right, black, transparent 70%);
+}
+
+.do-hero::after {
+  /* de las líneas emerge una retícula: el dataset estructurado */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(to right, rgba(185, 117, 42, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(185, 117, 42, 0.35) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(ellipse 60% 90% at 88% 30%, black, transparent 70%);
+}
+
+.do-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.do-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--stamp);
+  border: 1px solid rgba(185, 117, 42, 0.55);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.do-hero h1 {
+  font-family: var(--font-display);
+  color: var(--paper-2);
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  font-weight: 600;
+  max-width: 14ch;
+  margin-bottom: 1.1rem;
+}
+
+.do-hero p.lead {
+  max-width: 56ch;
+  font-size: 1.15rem;
+  color: #D8DBE2;
+  margin-bottom: 2rem;
+}
+
+.do-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.do-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  padding: 0.65rem 1.15rem;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.do-btn-primary {
+  background: var(--stamp);
+  color: var(--ink);
+}
+.do-btn-primary:hover {
+  background: #cf8636;
+  color: var(--ink);
+}
+
+.do-btn-ghost {
+  border-color: rgba(244, 242, 234, 0.4);
+  color: var(--paper-2);
+}
+.do-btn-ghost:hover {
+  border-color: var(--paper-2);
+  background: rgba(244, 242, 234, 0.08);
+  color: var(--paper-2);
+}
+
+.do-hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.do-hero-stat .n {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--paper-2);
+  display: block;
+  line-height: 1;
+}
+.do-hero-stat .label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #ABB2C0;
+  text-transform: lowercase;
+}
+
+/* ---------- Secciones de la portada (presentación / blog / datos / repo) */
+
+.do-sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 2.5rem 0 3.5rem 0;
+}
+
+@media (max-width: 750px) {
+  .do-sections { grid-template-columns: 1fr; }
+}
+
+.do-section-card {
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  padding: 1.6rem 1.7rem;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.do-section-card:hover {
+  border-color: var(--stamp);
+  transform: translateY(-2px);
+}
+
+.do-section-card .tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--stamp-d);
+}
+
+.do-section-card h3 {
+  font-family: var(--font-display);
+  margin: 0.4rem 0 0.5rem 0;
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.do-section-card p {
+  color: var(--text-mut);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ---------- Índice de datos abiertos (registro, no tarjetas) --------- */
+
+.do-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.do-filter {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-mut);
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.do-filter.is-active,
+.do-filter:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.do-ledger {
+  border-top: 1px solid var(--ink);
+}
+
+.do-record {
+  display: grid;
+  grid-template-columns: 88px 1fr auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 700px) {
+  .do-record {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+}
+
+.do-record .fmt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--paper-2);
+  background: var(--ink-700);
+  padding: 0.2rem 0.45rem;
+  border-radius: 2px;
+  text-align: center;
+  align-self: start;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.do-record .fmt.kml { background: var(--free-d); }
+.do-record .fmt.pdf { background: #7a3b3b; }
+.do-record .fmt.xlsx,
+.do-record .fmt.csv { background: var(--ink-700); }
+
+.do-record h4 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin: 0 0 0.3rem 0;
+  color: var(--ink);
+}
+
+.do-record .meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-mut);
+  margin-bottom: 0.4rem;
+}
+
+.do-record .meta span:not(:last-child)::after {
+  content: " · ";
+  color: var(--line);
+}
+
+.do-record p {
+  color: var(--text-mut);
+  font-size: 0.93rem;
+  margin: 0;
+}
+
+.do-record .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .do-record .actions { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+}
+
+.do-record .actions a {
+  font-size: 0.85rem;
+  color: var(--ink-700);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.do-record .actions a:hover {
+  border-color: var(--stamp);
+  color: var(--stamp-d);
+}
+
+/* ---------- Notas / cajas informativas -------------------------------- */
+
+.do-note {
+  border-left: 3px solid var(--stamp);
+  background: var(--paper);
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 1.5rem 0;
+}

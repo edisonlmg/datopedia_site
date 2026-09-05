@@ -1,13 +1,83 @@
 ---
-title: "datopediablog"
-listing:
-  contents: "posts"
-  feed: true
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+pagetitle: "Datopedia — datos públicos liberados"
 page-layout: full
-title-block-banner: true
 ---
+
+```{r}
+#| label: setup
+library(yaml)
+datasets <- yaml::read_yaml("data/datasets.yml")$datasets
+n_datasets <- length(datasets)
+n_formatos <- length(unique(sapply(datasets, function(x) x$formato)))
+```
+
+::: {.do-hero}
+::: {.do-hero-inner}
+<span class="do-hero-kicker">● datos públicos, liberados</span>
+
+# El dato público liberado y abierto.
+
+<p class="lead">Datopedia extrae información pública atrapada en informes PDF, hojas de cálculo, archivos geográficos y otros formatos no estructurados o no procesables directamente, y la transforma en datasets abiertos, documentados y listos para usar.</p>
+
+::: {.do-hero-actions}
+[Ver datos abiertos](datos-abiertos.qmd){.do-btn .do-btn-primary}
+[Leer el blog](blog.qmd){.do-btn .do-btn-ghost}
+:::
+
+::: {.do-hero-stats}
+::: {.do-hero-stat}
+<span class="n">`{r} n_datasets`</span>
+<span class="label">datasets liberados</span>
+:::
+::: {.do-hero-stat}
+<span class="n">`{r} n_formatos`</span>
+<span class="label">formatos de origen</span>
+:::
+::: {.do-hero-stat}
+<span class="n">100%</span>
+<span class="label">código y datos abiertos</span>
+:::
+:::
+:::
+:::
+
+## Qué encuentras aquí
+
+```{=html}
+<div class="do-sections">
+  <a class="do-section-card" href="presentacion.qmd">
+    <span class="tag">01 · presentación</span>
+    <h3>Qué es Datopedia</h3>
+    <p>Quiénes hacemos este proyecto, por qué liberamos datos públicos y qué
+    criterios seguimos para hacerlo.</p>
+  </a>
+  <a class="do-section-card" href="blog.qmd">
+    <span class="tag">02 · blog</span>
+    <h3>Análisis y hallazgos</h3>
+    <p>Notas y visualizaciones sobre inversión pública, presupuesto y
+    contrataciones en el Perú, construidas sobre los datasets liberados.</p>
+  </a>
+  <a class="do-section-card" href="datos-abiertos.qmd">
+    <span class="tag">03 · datos abiertos</span>
+    <h3>El catálogo de datasets</h3>
+    <p>Tablas de informes, Excel de reporte físico y archivos KML convertidos
+    en datasets listos para descargar, con su diccionario de datos.</p>
+  </a>
+  <a class="do-section-card" href="https://github.com/edisonlmg/datopedia_site.git" target="_blank" rel="noopener">
+    <span class="tag">04 · repositorio</span>
+    <h3>Código en GitHub</h3>
+    <p>Los scripts de extracción, los datasets y sus diccionarios viven en el
+    repositorio público de Datopedia.</p>
+  </a>
+</div>
+```
+
+## Cómo trabajamos
+
+Cada dataset del catálogo pasa por el mismo proceso: identificamos una fuente
+pública no estructurada — un informe en PDF, un Excel pensado para
+imprimirse, un archivo KML de un visor institucional — y la convertimos en
+una tabla limpia, con nombres de columna estandarizados y un diccionario de
+datos que explica cada campo. El dataset, su diccionario y el script que lo
+generó quedan publicados en el [repositorio de GitHub](https://github.com/edisonlmg/datopedia_site.git),
+para que cualquier persona pueda auditar el proceso o reutilizarlo.

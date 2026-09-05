@@ -1,39 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://edisonlmg.github.io/datopediablog/presentations.html</loc>
-    <lastmod>2026-04-23T02:53:15.734Z</lastmod>
+    <loc>https://datopedia.org/index.html</loc>
+    <lastmod>2026-09-05T01:11:15.089Z</lastmod>
   </url>
   <url>
-    <loc>https://edisonlmg.github.io/datopediablog/posts/welcome/index.html</loc>
-    <lastmod>2026-04-20T02:52:51.764Z</lastmod>
+    <loc>https://datopedia.org/presentacion.html</loc>
+    <lastmod>2026-09-05T01:13:26.156Z</lastmod>
   </url>
   <url>
-    <loc>https://edisonlmg.github.io/datopediablog/index.html</loc>
-    <lastmod>2026-04-23T03:00:15.222Z</lastmod>
+    <loc>https://datopedia.org/datos-abiertos.html</loc>
+    <lastmod>2026-09-04T23:58:24.114Z</lastmod>
   </url>
   <url>
-    <loc>https://edisonlmg.github.io/datopediablog/dashboards.html</loc>
-    <lastmod>2026-04-23T00:45:53.846Z</lastmod>
+    <loc>https://datopedia.org/blog.html</loc>
+    <lastmod>2026-09-04T03:04:44.000Z</lastmod>
   </url>
   <url>
-    <loc>https://edisonlmg.github.io/datopediablog/about.html</loc>
-    <lastmod>2026-04-22T04:02:25.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edisonlmg.github.io/datopediablog/dashboards/sbs_financial_system/sbs_financial_system.html</loc>
-    <lastmod>2026-04-22T03:44:48.083Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edisonlmg.github.io/datopediablog/datasets.html</loc>
-    <lastmod>2026-04-23T00:48:07.294Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edisonlmg.github.io/datopediablog/posts/post-with-code/index.html</loc>
-    <lastmod>2026-04-20T02:52:51.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edisonlmg.github.io/datopediablog/presentations/sbs_financial_system/sbs_financial_system.html</loc>
-    <lastmod>2026-04-23T02:46:50.978Z</lastmod>
+    <loc>https://datopedia.org/posts/liberando-datos-conflictos-sociales/index.html</loc>
+    <lastmod>2026-09-04T03:19:37.000Z</lastmod>
   </url>
 </urlset>

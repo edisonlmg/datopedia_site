@@ -1,0 +1,30 @@
+# -----------------------------------------------------------------------
+# Catálogo de datasets liberados por Datopedia.
+#
+# Cada entrada representa UN dataset. El dataset y su diccionario de datos
+# viven en el repositorio de GitHub, dentro de datasets/<slug>/: aquí solo
+# se referencian por URL (raw.githubusercontent.com para descarga directa,
+# github.com/.../blob para el diccionario, github.com/.../tree para "ver
+# en GitHub").
+#
+# No se edita a mano entrada por entrada: cada pipeline en R/<slug>/ termina
+# con 02_publicar_<dataset>.R, que imprime el bloque YAML listo para pegar
+# aquí (ver R/README.md). formato: csv | xlsx | kml | geojson — determina
+# el color del tag en el catálogo. categoria alimenta los botones de filtro.
+# -----------------------------------------------------------------------
+datasets:
+
+  - id: conflictos-sociales
+    nombre: "Conflictos sociales registrados por la Defensoría del Pueblo"
+    descripcion: >
+      Casos de conflicto social reportados mensualmente por la Defensoría
+      del Pueblo, consolidados a partir de los KML de su visor institucional
+      y con UBIGEO de departamento, provincia y distrito asignado por cruce
+      de nombre.
+    categoria: "Conflictividad social"
+    formato: csv
+    fuente_original: "Reporte mensual de Conflictos Sociales (KML del visor de la Defensoría del Pueblo)"
+    fecha_actualizacion: "2026-09"
+    url_dataset: "https://raw.githubusercontent.com/datopedia-pe/datopedia/main/datasets/conflictos-sociales/conflictos_sociales.csv"
+    url_diccionario: "https://github.com/datopedia-pe/datopedia/blob/main/datasets/conflictos-sociales/diccionario.md"
+    url_repo: "https://github.com/datopedia-pe/datopedia/tree/main/datasets/conflictos-sociales"

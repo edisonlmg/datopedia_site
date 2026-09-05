@@ -1,0 +1,66 @@
+---
+title: "Datopedia se convierte en un sitio de liberación de datos"
+subtitle: "Empezamos con el reporte mensual de conflictos sociales de la Defensoría del Pueblo"
+date: "2026-09-03"
+categories: ["Anuncios", "Datos abiertos", "Conflictividad social"]
+description: >
+  Presentamos el catálogo de datos abiertos de Datopedia, y el primer
+  dataset liberado: los conflictos sociales que reporta mensualmente la
+  Defensoría del Pueblo, reconstruidos a partir de sus archivos KML.
+---
+
+Durante los últimos meses, la mayor parte del trabajo detrás de cada
+visualización o análisis publicado en Datopedia ha sido, en realidad,
+invisible para quien lo lee: horas dedicadas a extraer una tabla de un PDF
+de doscientas páginas, a reconstruir un panel de datos a partir de decenas
+de Excel individuales, o a convertir la salida de un visor institucional en
+algo que se pueda cargar en cualquier herramienta de análisis.
+
+A partir de hoy, ese trabajo deja de ser invisible.
+
+## Qué cambia
+
+Datopedia incorpora una nueva sección, [Datos abiertos](/datos-abiertos.qmd),
+con un catálogo de datasets liberados a partir de fuentes públicas no
+estructuradas. Cada dataset se publica junto con:
+
+- **El archivo en un formato abierto** (CSV, GeoJSON/KML) listo para
+  descargar.
+- **Un diccionario de datos** que explica cada columna.
+- **El código de extracción**, disponible en el
+  [repositorio de GitHub](https://github.com/datopedia-pe/datopedia).
+
+## El primer dataset: conflictos sociales
+
+El catálogo abre con el
+[reporte mensual de Conflictos Sociales de la Defensoría del Pueblo](/datos-abiertos.qmd).
+La Defensoría publica un mapa por mes con los casos activos y su fase, pero
+el mapa no trae los datos detrás: para analizar cómo evoluciona un caso en
+el tiempo, o comparar conflictividad entre regiones, hay que reconstruir esa
+información mes a mes desde el archivo KML que exporta el visor.
+
+Eso es exactamente lo que hace el pipeline que libera este dataset:
+consolida los KML mensuales en una sola tabla, deduplica los casos que el
+mapa repite entre sus distintas capas (todos / activos / socioambientales),
+y cruza el departamento, la provincia y el distrito de cada caso contra la
+tabla oficial de UBIGEO — para que el dataset se pueda combinar directamente
+con cualquier otra fuente pública organizada por UBIGEO.
+
+## Por qué
+
+La información pública peruana suele cumplir la definición legal de "dato
+abierto" sin cumplir la definición práctica: está disponible, pero no es
+usable sin antes reconstruirla. Esa reconstrucción es el trabajo que ya
+veníamos haciendo para nuestros propios análisis. Publicarla como insumo
+significa que cualquier persona —periodista, investigador, funcionario
+público— puede partir de ahí, en lugar de repetir el mismo trabajo de
+extracción desde cero.
+
+## Qué sigue
+
+El pipeline que procesa conflictos sociales quedó documentado como plantilla
+reutilizable en el repositorio, para que cada dataset nuevo siga la misma
+convención: un script que extrae y limpia, y otro que publica el CSV, el
+diccionario de datos y lo suma al catálogo. Cada dataset nuevo tendrá su
+propia nota en este blog explicando de dónde salió y qué decisiones se
+tomaron al construirlo.

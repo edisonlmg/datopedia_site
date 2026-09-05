@@ -1,25 +1,8 @@
 [
   {
-    "listing": "/presentations.html",
+    "listing": "/blog.html",
     "items": [
-      "/presentations/sbs_financial_system/sbs_financial_system.html"
+      "/posts/liberando-datos-conflictos-sociales/index.html"
     ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/dashboards.html",
-    "items": [
-      "/dashboards/sbs_financial_system/sbs_financial_system.html"
-    ]
-  },
-  {
-    "listing": "/datasets.html",
-    "items": []
   }
 ]

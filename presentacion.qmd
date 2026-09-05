@@ -1,0 +1,47 @@
+---
+title: "Presentación"
+subtitle: "Qué es Datopedia y por qué liberamos datos"
+page-layout: article
+---
+
+## El problema
+
+Una parte enorme de la información pública peruana existe, pero no es
+realmente **usable**. Está atrapada en informes en PDF que nadie tabuló,
+en hojas de Excel diseñadas para imprimirse y no para analizarse, o en
+archivos KML de visores institucionales que muestran un mapa pero no
+entregan los datos detrás de él. Técnicamente esa información es "abierta":
+cualquiera puede verla. En la práctica, nadie puede trabajar con ella sin
+antes reconstruirla a mano.
+
+## Qué hace Datopedia
+
+Datopedia identifica esas fuentes no estructuradas y las convierte en
+**datasets directamente consumibles**: tablas limpias, con columnas
+estandarizadas, documentadas con un diccionario de datos, y publicadas junto
+con el código que las generó. El objetivo no es solo publicar análisis
+propios — es dejar el insumo disponible para que cualquier persona,
+periodista, investigador o institución pueda construir sobre él.
+
+Este sitio tiene tres partes que se alimentan entre sí:
+
+- **[Datos abiertos](datos-abiertos.qmd)** — el catálogo de datasets
+  liberados, cada uno con su fuente original, su diccionario y su código.
+- **[Blog](blog.qmd)** — análisis, visualizaciones y hallazgos construidos
+  sobre esos datasets.
+- **[Repositorio en GitHub](https://github.com/datopedia-pe/datopedia)** —
+  donde vive todo: los scripts de extracción, los datasets y este mismo
+  sitio, hecho en Quarto.
+
+## Criterios de liberación
+
+- **La fuente debe ser pública.** Solo se trabaja con información que ya es
+  de acceso público, aunque no esté estructurada.
+- **Se documenta el origen.** Cada dataset indica de qué informe, portal o
+  visor proviene, y cuándo se extrajo.
+- **Se publica el proceso, no solo el resultado.** El código de extracción
+  queda en el repositorio junto con el dataset.
+- **Se prioriza lo reutilizable.** Formatos abiertos (CSV, GeoJSON/KML) antes
+  que formatos propietarios, y nombres de columna estandarizados.
+
+

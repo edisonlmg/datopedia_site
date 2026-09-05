@@ -1,0 +1,14 @@
+---
+title: "Blog"
+subtitle: "Análisis y hallazgos sobre el sector público peruano"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  feed: true
+  fields: [image, date, title, subtitle, categories, reading-time]
+  date-format: "D [de] MMMM, YYYY"
+page-layout: full
+title-block-banner: false
+---

@@ -1,72 +1,114 @@
 [
   {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentaciones",
-    "section": "",
-    "text": "Repositorio de diapositivas sobre inversión pública, transparencia y ciencia de datos presentadas en conferencias y talleres.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResultados de empresas del sistema financiero\n\n\nFebrero 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "datopediablog",
+    "title": "El dato público liberado y abierto.",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 17, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 14, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "● datos públicos, liberados\n\n\n\nDatopedia extrae información pública atrapada en informes PDF, hojas de cálculo, archivos geográficos y otros formatos no estructurados o no procesables directamente, y la transforma en datasets abiertos, documentados y listos para usar.\n\n\nVer datos abiertos Leer el blog\n\n\n\n1 datasets liberados\n\n\n1 formatos de origen\n\n\n100% código y datos abiertos"
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Dashboards basados en información pública",
+    "objectID": "index.html#qué-encuentras-aquí",
+    "href": "index.html#qué-encuentras-aquí",
+    "title": "El dato público liberado y abierto.",
+    "section": "Qué encuentras aquí",
+    "text": "Qué encuentras aquí\n\n  \n    01 · presentación\n    Qué es Datopedia\n    Quiénes hacemos este proyecto, por qué liberamos datos públicos y qué\n    criterios seguimos para hacerlo.\n  \n  \n    02 · blog\n    Análisis y hallazgos\n    Notas y visualizaciones sobre inversión pública, presupuesto y\n    contrataciones en el Perú, construidas sobre los datasets liberados.\n  \n  \n    03 · datos abiertos\n    El catálogo de datasets\n    Tablas de informes, Excel de reporte físico y archivos KML convertidos\n    en datasets listos para descargar, con su diccionario de datos.\n  \n  \n    04 · repositorio\n    Código en GitHub\n    Los scripts de extracción, los datasets y sus diccionarios viven en el\n    repositorio público de Datopedia."
+  },
+  {
+    "objectID": "index.html#cómo-trabajamos",
+    "href": "index.html#cómo-trabajamos",
+    "title": "El dato público liberado y abierto.",
+    "section": "Cómo trabajamos",
+    "text": "Cómo trabajamos\nCada dataset del catálogo pasa por el mismo proceso: identificamos una fuente pública no estructurada — un informe en PDF, un Excel pensado para imprimirse, un archivo KML de un visor institucional — y la convertimos en una tabla limpia, con nombres de columna estandarizados y un diccionario de datos que explica cada campo. El dataset, su diccionario y el script que lo generó quedan publicados en el repositorio de GitHub, para que cualquier persona pueda auditar el proceso o reutilizarlo."
+  },
+  {
+    "objectID": "presentacion.html",
+    "href": "presentacion.html",
+    "title": "Presentación",
     "section": "",
-    "text": "SBS: Resultado neto de entidades del sistema financiero\n\n4 min\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Una parte enorme de la información pública peruana existe, pero no es realmente usable. Está atrapada en informes en PDF que nadie tabuló, en hojas de Excel diseñadas para imprimirse y no para analizarse, o en archivos KML de visores institucionales que muestran un mapa pero no entregan los datos detrás de él. Técnicamente esa información es “abierta”: cualquiera puede verla. En la práctica, nadie puede trabajar con ella sin antes reconstruirla a mano."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "presentacion.html#el-problema",
+    "href": "presentacion.html#el-problema",
+    "title": "Presentación",
     "section": "",
-    "text": "About this blog"
+    "text": "Una parte enorme de la información pública peruana existe, pero no es realmente usable. Está atrapada en informes en PDF que nadie tabuló, en hojas de Excel diseñadas para imprimirse y no para analizarse, o en archivos KML de visores institucionales que muestran un mapa pero no entregan los datos detrás de él. Técnicamente esa información es “abierta”: cualquiera puede verla. En la práctica, nadie puede trabajar con ella sin antes reconstruirla a mano."
   },
   {
-    "objectID": "datasets.html",
-    "href": "datasets.html",
-    "title": "Repositorio de Datasets",
+    "objectID": "presentacion.html#qué-hace-datopedia",
+    "href": "presentacion.html#qué-hace-datopedia",
+    "title": "Presentación",
+    "section": "Qué hace Datopedia",
+    "text": "Qué hace Datopedia\nDatopedia identifica esas fuentes no estructuradas y las convierte en datasets directamente consumibles: tablas limpias, con columnas estandarizadas, documentadas con un diccionario de datos, y publicadas junto con el código que las generó. El objetivo no es solo publicar análisis propios — es dejar el insumo disponible para que cualquier persona, periodista, investigador o institución pueda construir sobre él.\nEste sitio tiene tres partes que se alimentan entre sí:\n\nDatos abiertos — el catálogo de datasets liberados, cada uno con su fuente original, su diccionario y su código.\nBlog — análisis, visualizaciones y hallazgos construidos sobre esos datasets.\nRepositorio en GitHub — donde vive todo: los scripts de extracción, los datasets y este mismo sitio, hecho en Quarto."
+  },
+  {
+    "objectID": "presentacion.html#criterios-de-liberación",
+    "href": "presentacion.html#criterios-de-liberación",
+    "title": "Presentación",
+    "section": "Criterios de liberación",
+    "text": "Criterios de liberación\n\nLa fuente debe ser pública. Solo se trabaja con información que ya es de acceso público, aunque no esté estructurada.\nSe documenta el origen. Cada dataset indica de qué informe, portal o visor proviene, y cuándo se extrajo.\nSe publica el proceso, no solo el resultado. El código de extracción queda en el repositorio junto con el dataset.\nSe prioriza lo reutilizable. Formatos abiertos (CSV, GeoJSON/KML) antes que formatos propietarios, y nombres de columna estandarizados."
+  },
+  {
+    "objectID": "presentacion.html#quién-está-detrás",
+    "href": "presentacion.html#quién-está-detrás",
+    "title": "Presentación",
+    "section": "Quién está detrás",
+    "text": "Quién está detrás\nDatopedia es un proyecto de Edison Mondragón, ingeniero economista especializado en el sector público peruano — inversión pública, control gubernamental y presupuesto — que usa R y Quarto para convertir esa experiencia en datos y análisis abiertos."
+  },
+  {
+    "objectID": "datos-abiertos.html",
+    "href": "datos-abiertos.html",
+    "title": "Datos abiertos",
     "section": "",
-    "text": "No matching items"
+    "text": "Cada registro de este catálogo fue, en su origen, un documento no pensado para el análisis: un informe en PDF, un Excel de reporte físico o un archivo KML de un visor institucional. Aquí lo encuentras ya como una tabla limpia, con su diccionario de datos y el repositorio donde vive el script que lo generó — todo alojado en GitHub."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "datos-abiertos.html#cómo-usar-estos-datasets",
+    "href": "datos-abiertos.html#cómo-usar-estos-datasets",
+    "title": "Datos abiertos",
+    "section": "Cómo usar estos datasets",
+    "text": "Cómo usar estos datasets\nCada dataset se distribuye junto con un diccionario de datos en Markdown que describe cada columna, su tipo y su unidad. Recomendamos citar la fuente original y a Datopedia al reutilizar cualquiera de estos datasets. El historial de cambios de cada uno queda registrado en el historial de commits de su carpeta en el repositorio de GitHub."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "Code\n1 + 1\n\n\n[1] 2"
+    "text": "Datopedia se convierte en un sitio de liberación de datos\n\n\nEmpezamos con el reporte mensual de conflictos sociales de la Defensoría del Pueblo\n\n\n\nAnuncios\n\nDatos abiertos\n\nConflictividad social\n\n\n\n\n\n\n3 de septiembre, 2026\n\n2 minutos\n\n\n\n\nNo hay resultados\n Volver arriba"
   },
   {
-    "objectID": "posts/post-with-code/index.html#hoka-2",
-    "href": "posts/post-with-code/index.html#hoka-2",
-    "title": "Post With Code",
-    "section": "2.1 hoka 2",
-    "text": "2.1 hoka 2"
+    "objectID": "posts/liberando-datos-conflictos-sociales/index.html",
+    "href": "posts/liberando-datos-conflictos-sociales/index.html",
+    "title": "Datopedia se convierte en un sitio de liberación de datos",
+    "section": "",
+    "text": "Durante los últimos meses, la mayor parte del trabajo detrás de cada visualización o análisis publicado en Datopedia ha sido, en realidad, invisible para quien lo lee: horas dedicadas a extraer una tabla de un PDF de doscientas páginas, a reconstruir un panel de datos a partir de decenas de Excel individuales, o a convertir la salida de un visor institucional en algo que se pueda cargar en cualquier herramienta de análisis.\nA partir de hoy, ese trabajo deja de ser invisible."
   },
   {
-    "objectID": "presentations/sbs_financial_system/sbs_financial_system.html#objetivos-del-proyecto",
-    "href": "presentations/sbs_financial_system/sbs_financial_system.html#objetivos-del-proyecto",
-    "title": "Resultados de empresas del sistema financiero",
-    "section": "Objetivos del Proyecto",
-    "text": "Objetivos del Proyecto\n\nEvaluar el cumplimiento de la Ley de Transparencia.\nAutomatizar la recolección de datos mediante Web Scraping.\nGenerar un ranking municipal."
+    "objectID": "posts/liberando-datos-conflictos-sociales/index.html#qué-cambia",
+    "href": "posts/liberando-datos-conflictos-sociales/index.html#qué-cambia",
+    "title": "Datopedia se convierte en un sitio de liberación de datos",
+    "section": "Qué cambia",
+    "text": "Qué cambia\nDatopedia incorpora una nueva sección, Datos abiertos, con un catálogo de datasets liberados a partir de fuentes públicas no estructuradas. Cada dataset se publica junto con:\n\nEl archivo en un formato abierto (CSV, GeoJSON/KML) listo para descargar.\nUn diccionario de datos que explica cada columna.\nEl código de extracción, disponible en el repositorio de GitHub."
   },
   {
-    "objectID": "presentations/sbs_financial_system/sbs_financial_system.html#análisis-de-datos-en-r",
-    "href": "presentations/sbs_financial_system/sbs_financial_system.html#análisis-de-datos-en-r",
-    "title": "Resultados de empresas del sistema financiero",
-    "section": "Análisis de Datos en R",
-    "text": "Análisis de Datos en R\nPuedes incluir bloques de código que se ejecuten y muestren resultados:\n\n\nCode\nsummary(cars)\n\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+    "objectID": "posts/liberando-datos-conflictos-sociales/index.html#el-primer-dataset-conflictos-sociales",
+    "href": "posts/liberando-datos-conflictos-sociales/index.html#el-primer-dataset-conflictos-sociales",
+    "title": "Datopedia se convierte en un sitio de liberación de datos",
+    "section": "El primer dataset: conflictos sociales",
+    "text": "El primer dataset: conflictos sociales\nEl catálogo abre con el reporte mensual de Conflictos Sociales de la Defensoría del Pueblo. La Defensoría publica un mapa por mes con los casos activos y su fase, pero el mapa no trae los datos detrás: para analizar cómo evoluciona un caso en el tiempo, o comparar conflictividad entre regiones, hay que reconstruir esa información mes a mes desde el archivo KML que exporta el visor.\nEso es exactamente lo que hace el pipeline que libera este dataset: consolida los KML mensuales en una sola tabla, deduplica los casos que el mapa repite entre sus distintas capas (todos / activos / socioambientales), y cruza el departamento, la provincia y el distrito de cada caso contra la tabla oficial de UBIGEO — para que el dataset se pueda combinar directamente con cualquier otra fuente pública organizada por UBIGEO."
+  },
+  {
+    "objectID": "posts/liberando-datos-conflictos-sociales/index.html#por-qué",
+    "href": "posts/liberando-datos-conflictos-sociales/index.html#por-qué",
+    "title": "Datopedia se convierte en un sitio de liberación de datos",
+    "section": "Por qué",
+    "text": "Por qué\nLa información pública peruana suele cumplir la definición legal de “dato abierto” sin cumplir la definición práctica: está disponible, pero no es usable sin antes reconstruirla. Esa reconstrucción es el trabajo que ya veníamos haciendo para nuestros propios análisis. Publicarla como insumo significa que cualquier persona —periodista, investigador, funcionario público— puede partir de ahí, en lugar de repetir el mismo trabajo de extracción desde cero."
+  },
+  {
+    "objectID": "posts/liberando-datos-conflictos-sociales/index.html#qué-sigue",
+    "href": "posts/liberando-datos-conflictos-sociales/index.html#qué-sigue",
+    "title": "Datopedia se convierte en un sitio de liberación de datos",
+    "section": "Qué sigue",
+    "text": "Qué sigue\nEl pipeline que procesa conflictos sociales quedó documentado como plantilla reutilizable en el repositorio, para que cada dataset nuevo siga la misma convención: un script que extrae y limpia, y otro que publica el CSV, el diccionario de datos y lo suma al catálogo. Cada dataset nuevo tendrá su propia nota en este blog explicando de dónde salió y qué decisiones se tomaron al construirlo."
   }
 ]

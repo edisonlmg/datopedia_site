@@ -1,8 +1,43 @@
-.Rproj.user
+/.quarto/
+/_site/
+/_freeze/
+.Rproj.user/
+.Rhistory
+.RData
+.DS_Store
+
+# --- Pipelines de datasets --------------------------------------------------
+# Fuente cruda: se descarga de nuevo de cada portal/visor, no se versiona
+# (puede pesar mucho y suele tener más detalle del que hace falta conservar).
+data/raw/*
+!data/raw/*/README.md
+!data/raw/*/.gitkeep
+
+# Insumos intermedios (.rds entre 01_procesar y 02_publicar): reproducibles
+# corriendo el pipeline, no hace falta versionarlos.
+data/processed/*
+!data/processed/*/.gitkeep
+
+# data/interim/ SÍ se versiona (tablas de referencia compartidas, como
+# ubigeos_2025.csv) y datasets/ SÍ se versiona (es lo que se publica).
+
+**/*.quarto_ipynb
+
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 
-/.quarto/
-**/*.quarto_ipynb
-.positai
+.quarto/
+*_cache/
+*_files/
+
+renv/library/
+renv/staging/
+
+.DS_Store
+Thumbs.db
+
+data/raw
+data/interim
+

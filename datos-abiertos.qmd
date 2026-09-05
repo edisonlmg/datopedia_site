@@ -1,0 +1,93 @@
+---
+title: "Datos abiertos"
+subtitle: "Catálogo de datasets liberados por Datopedia"
+page-layout: article
+---
+
+Cada registro de este catálogo fue, en su origen, un documento no pensado
+para el análisis: un informe en PDF, un Excel de reporte físico o un archivo
+KML de un visor institucional. Aquí lo encuentras ya como una tabla limpia,
+con su **diccionario de datos** y el **repositorio** donde vive el script
+que lo generó — todo alojado en GitHub.
+
+::: {.do-note}
+¿Falta un dato que necesitas liberado? Ábrelo como
+[issue en el repositorio](https://github.com/datopedia-pe/datopedia/issues/new)
+o escríbenos.
+:::
+
+```{r}
+#| label: build-ledger
+#| results: asis
+library(yaml)
+
+datasets <- yaml::read_yaml("data/datasets.yml")$datasets
+categorias <- unique(sapply(datasets, function(x) x$categoria))
+
+# NOTA: ninguna línea de HTML de este bloque lleva sangría al inicio.
+# Markdown interpreta 4+ espacios de indentación como un bloque de código
+# literal, así que cualquier línea sangrada aquí se vería como texto plano
+# en vez de renderizarse como HTML.
+
+# --- Filtros ---------------------------------------------------------
+cat('<div class="do-filters" id="do-filters">\n')
+cat('<button class="do-filter is-active" data-filtro="todos">Todos</button>\n')
+for (cat_i in categorias) {
+  cat(sprintf('<button class="do-filter" data-filtro="%s">%s</button>\n',
+              tolower(gsub(" ", "-", cat_i)), cat_i))
+}
+cat('</div>\n')
+
+# --- Ledger ------------------------------------------------------------
+cat('<div class="do-ledger" id="do-ledger">\n')
+
+for (d in datasets) {
+  cat_slug <- tolower(gsub(" ", "-", d$categoria))
+  cat(sprintf('<div class="do-record" data-categoria="%s">\n', cat_slug))
+  cat(sprintf('<span class="fmt %s">%s</span>\n', d$formato, d$formato))
+  cat('<div class="body">\n')
+  cat(sprintf('<h4>%s</h4>\n', d$nombre))
+  cat(sprintf(
+    '<div class="meta"><span>%s</span><span>actualizado %s</span><span>fuente: %s</span></div>\n',
+    d$categoria, d$fecha_actualizacion, d$fuente_original
+  ))
+  cat(sprintf('<p>%s</p>\n', trimws(d$descripcion)))
+  cat('</div>\n')
+  cat('<div class="actions">\n')
+  cat(sprintf('<a href="%s" target="_blank" rel="noopener">Descargar dataset</a>\n', d$url_dataset))
+  cat(sprintf('<a href="%s" target="_blank" rel="noopener">Diccionario de datos</a>\n', d$url_diccionario))
+  cat(sprintf('<a href="%s" target="_blank" rel="noopener">Ver en GitHub</a>\n', d$url_repo))
+  cat('</div>\n')
+  cat('</div>\n')
+}
+
+cat('</div>\n')
+```
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll("#do-filters .do-filter");
+  const records = document.querySelectorAll("#do-ledger .do-record");
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      buttons.forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      const filtro = btn.getAttribute("data-filtro");
+      records.forEach(function (rec) {
+        const show = filtro === "todos" || rec.getAttribute("data-categoria") === filtro;
+        rec.style.display = show ? "grid" : "none";
+      });
+    });
+  });
+});
+</script>
+```
+
+## Cómo usar estos datasets
+
+Cada dataset se distribuye junto con un **diccionario de datos** en Markdown
+que describe cada columna, su tipo y su unidad. Recomendamos citar la fuente
+original y a Datopedia al reutilizar cualquiera de estos datasets. El
+historial de cambios de cada uno queda registrado en el historial de commits
+de su carpeta en el [repositorio de GitHub](https://github.com/datopedia-pe/datopedia).
